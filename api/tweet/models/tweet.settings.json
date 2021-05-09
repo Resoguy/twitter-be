@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tweets",
+  "info": {
+    "name": "Tweet",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 3
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "tweets"
+    }
+  }
+}
