@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "tweets",
+  "collectionName": "comments",
   "info": {
-    "name": "Tweet",
-    "description": ""
+    "name": "Comment"
   },
   "options": {
     "increments": true,
@@ -21,15 +20,11 @@
     "user": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "tweets"
+      "via": "comments"
     },
-    "likes": {
-      "via": "tweet",
-      "collection": "like"
-    },
-    "comments": {
-      "via": "tweet",
-      "collection": "comment"
+    "tweet": {
+      "model": "tweet",
+      "via": "comments"
     }
   }
 }

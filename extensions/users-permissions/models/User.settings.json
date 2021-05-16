@@ -62,6 +62,14 @@
     "tweets": {
       "via": "user",
       "collection": "tweet"
+    },
+    "likes": {
+      "via": "user",
+      "collection": "like"
+    },
+    "comments": {
+      "via": "user",
+      "collection": "comment"
     }
   }
 }
