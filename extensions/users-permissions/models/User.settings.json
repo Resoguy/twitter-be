@@ -70,6 +70,36 @@
     "comments": {
       "via": "user",
       "collection": "comment"
+    },
+    "profileImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "bio": {
+      "type": "text",
+      "maxLength": 255,
+      "minLength": 3
+    },
+    "location": {
+      "type": "string",
+      "maxLength": 100,
+      "minLength": 3
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "maxLength": 10,
+      "minLength": 10
+    },
+    "website": {
+      "type": "string",
+      "maxLength": 100,
+      "minLength": 7
     }
   }
 }

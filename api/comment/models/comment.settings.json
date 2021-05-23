@@ -18,9 +18,9 @@
       "minLength": 3
     },
     "user": {
+      "via": "comments",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "comments"
+      "model": "user"
     },
     "tweet": {
       "model": "tweet",
